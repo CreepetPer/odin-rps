@@ -16,3 +16,11 @@ function getComputerChoice() {
 
     return computerChoice;
 }
+
+function getHumanChoice() {
+    let humanChoice = prompt("Choose either 'rock', 'paper', or 'scissors'")
+    return humanChoice;
+}
+
+let humanScore = 0;
+let computerScore = 0;
