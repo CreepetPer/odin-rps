@@ -47,3 +47,20 @@ humanChoice = humanChoice.toLowerCase();
 
     console.log(`You: ${humanScore}\nComputer: ${computerScore}`)
 }
+
+// event listeners for each rps button
+const btnRock = document.querySelector(".rock")
+const btnPaper = document.querySelector(".paper")
+const btnScissors = document.querySelector(".scissors")
+
+btnRock.onclick = (e) => {
+    playRound("rock", getComputerChoice());
+}
+
+btnPaper.onclick = (e) => {
+    playRound("paper", getComputerChoice());
+}
+
+btnScissors.onclick = (e) => {
+    playRound("scissors", getComputerChoice());
+}
